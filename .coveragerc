@@ -21,4 +21,7 @@ exclude_lines =
     if 0:
     if __name__ == .__main__.:
 
+    # Don't complain about mypy-specific code
+    if TYPE_CHECKING:
+
 ignore_errors = True
